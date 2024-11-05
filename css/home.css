@@ -1,0 +1,124 @@
+/* Archivo: styles.css */
+
+/* Configuración general */
+body {
+    font-family: "Arial Black", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    color: #005099;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #005099;
+    color: white;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* Sección Descripción */
+.descripcion {
+    background-color: #666666;
+    padding: 20px;
+}
+
+.descripcion h2 {
+    color: #005099;
+}
+
+.descripcion p {
+    color: white;
+}
+
+/* Sección de Productos Destacados */
+.productos-destacados {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.productos-destacados h2 {
+    color: #005099;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.precio {
+    font-size: 1.2em;
+    color: #005099;
+}
+
+.oferta {
+    color: red;
+    font-weight: bold;
+}
+
+.boton-descubrir {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005099;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #666666;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.preguntas-frecuentes {
+    margin-top: 10px;
+}
+
+.boton-preguntas {
+    color: white;
+    text-decoration: none;
+    background-color: #005099;
+    padding: 8px 15px;
+    border-radius: 5px;
+}

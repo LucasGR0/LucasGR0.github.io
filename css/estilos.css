@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+    background-image: url(./asets/Imagen\ de\ fondo.webp);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.acciones .boton, .acciones .carrito {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: #004a9f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carrito {
+    font-size: 20px;
+}
+
+/* Estilos para los botones de filtro */
+.menu-filtro {
+    background-color: #0056b3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ccc; /* Borde gris */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.categoria:hover {
+    background-color: #eee;
+    border-color: #999; /* Cambio de borde al hacer hover */
+}
+
+/* Estilos para los productos */
+.promo {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px auto; /* Centramos la promo */
+    width: 320px;
+}
+
+.promo h2 {
+    font-size: 28px;
+    margin: 0;
+    color: black;
+}
+
+/* Cuadrícula de productos centrada */
+.cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center; /* Centrar la cuadrícula */
+    padding: 0 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.3s ease;
+    margin: 15px;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.boton-comprar {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #003d85;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el botón de Preguntas Frecuentes */
+.preguntas-frecuentes {
+    margin-top: 10px;
+}
+
+.boton-preguntas {
+    color: white;
+    text-decoration: none;
+    background-color: #004a9f;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-preguntas:hover {
+    background-color: #003d85;
+}
+
+/* Estilos para el botón Home */
+.boton-home-container {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.boton-home {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-home:hover {
+    background-color: #003d85;
+}
+
+/* Ajustes del logo (más pequeño) */
+/* Ajustes del logo (más pequeño y desplazado) */
+.logo {
+    position: absolute;
+    height: 80px; /* Tamaño reducido */
+    padding-left: 20px;
+    margin-top: 40px; /* Baja el logo para que no tape el nombre */
+}
+
+/* Resto de los estilos... */
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: 1fr;
+    }
+}

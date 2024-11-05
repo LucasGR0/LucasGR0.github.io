@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto</title>
+    <link rel="stylesheet" href="../css/detalleProducto.css">
+   
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="brand">Urban Sneakers</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="login.html" class="btn-action">Iniciar sesión</a>
+                <a href="404.html" class="btn-action">Crear cuenta</a>
+                <a href="404.html" class="btn-cart"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito" width="24px"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400" alt="Zapatilla Deportiva Premium">
+            </div>
+            <div class="product-details">
+                <h2>Zapatilla Deportiva Premium</h2>
+                <p class="price">$129.99</p>
+                <form action="#">
+                    <label for="size">Seleccione el talle:</label>
+                    <select id="size" name="size">
+                        <option value="38">Talle 38</option>
+                        <option value="39">Talle 39</option>
+                        <option value="40">Talle 40</option>
+                    </select>
+
+                    <label for="gender">Seleccione el género:</label>
+                    <div class="gender-selection">
+                        <input type="radio" id="male" name="gender" value="Hombre">
+                        <label for="male">Hombre</label>
+                        <input type="radio" id="female" name="gender" value="Mujer">
+                        <label for="female">Mujer</label>
+                    </div>
+
+                    <button type="submit" class="btn-add-cart">Añadir al carrito</button>
+                </form>
+                <p class="product-description">Zapatilla urbana de alta calidad, ideal para combinar con cualquier estilo. Diseñadas para brindar comodidad durante todo el día, estas zapatillas están fabricadas con materiales resistentes y suelas antideslizantes, lo que las hace perfectas tanto para uso casual como para actividades físicas moderadas. Además, su diseño moderno las convierte en un complemento perfecto para cualquier atuendo urbano.</p>
+            </div>
+        </div>
+        <script src="../js/productos.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Atención al cliente: WhatsApp | Contacto | Tienda Online</p>
+            <p>Envíos a todo el país.</p>
+        </div>
+    </footer>
+</body>
+</html>
